@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<style>
+  .black {
+    background-color: black;
+  }
+
+  .white {
+    background-color: white;
+  }
+
+  .circle {
+    border-radius: 100%;
+    overflow: hidden;
+  }
+
+  .base-wrapper {
+    height: 500px;
+    width: 500px;
+    background-color: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .base-wrapper .symbol-wrapper {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    position: relative;
+  }
+
+  .base-wrapper .symbol-wrapper .symbol-background {
+    display: flex;
+    width: 100%;
+  }
+
+  .base-wrapper .symbol-wrapper .symbol-background > div {
+    flex-basis: 50%;
+  }
+
+  .base-wrapper .symbol-wrapper .symbol-main {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    width: 100%;
+  }
+
+  .base-wrapper .symbol-wrapper .symbol-main div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 50%;
+  }
+
+</style>
+
+<body>
+
+  <div class="base-wrapper">
+    <div class="symbol-wrapper circle">
+      <div class="symbol-background">
+        <div class="black"></div>
+        <div class="white"></div>
+      </div>
+      <div class="symbol-main">
+        <div class="black circle">
+          <div class="white circle"></div>
+        </div>
+        <div class="white circle">
+          <div class="black circle"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
